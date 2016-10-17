@@ -1,0 +1,701 @@
+@charset 'utf-8';
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+progress {
+  vertical-align: baseline;
+}
+template,
+[hidden] {
+  display: none;
+}
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+a:active,
+a:hover {
+  outline-width: 0;
+}
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+b,
+strong {
+  font-weight: inherit;
+}
+b,
+strong {
+  font-weight: bolder;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+img {
+  border-style: none;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  margin: 0;
+}
+optgroup {
+  font-weight: bold;
+}
+button,
+input {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+textarea {
+  overflow: auto;
+}
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+@import url("//hello.myfonts.net/count/32448c");
+@font-face {
+  font-family: 'NexaRustScriptL-00';
+  src: url("../fonts/32448C_0_0.eot");
+  src: url("../fonts/32448C_0_0.eot?#iefix") format('embedded-opentype'), url("../fonts/32448C_0_0.woff") format('woff'), url("../fonts/32448C_0_0.ttf") format('truetype'), url("../fonts/32448C_0_0.svg#NexaRustScriptL-00") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 1.4;
+  background: #e7e7e6;
+  color: #3c4855;
+  min-width: 300px;
+  -webkit-overflow-scrolling: touch;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  tap-highlight-color: rgba(0,0,0,0);
+}
+*::selection {
+  background: #8394a7;
+  color: #e7e7e6;
+}
+*::-moz-selection {
+  background: #8394a7;
+  color: #e7e7e6;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+p {
+  margin: 20px 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+hr {
+  border: none;
+  width: 50px;
+  height: 5px;
+  background: rgba(0,0,0,0.1);
+  border-radius: 5px;
+  margin: 40px auto;
+}
+.btn {
+  font-size: 0.875em;
+  font-weight: 400;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  background: #ff5a52;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+  width: auto;
+  min-width: 200px;
+  border: none;
+  border-radius: 5px;
+  padding: 0px 30px;
+  height: 40px;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-decoration: none;
+  -webkit-box-shadow: inset 0 -2px 0 rgba(0,0,0,0.1);
+  box-shadow: inset 0 -2px 0 rgba(0,0,0,0.1);
+}
+.btn:disabled {
+  cursor: default;
+  background: #686868;
+  color: #e7e7e6;
+}
+.btn:focus {
+  outline: none;
+}
+.btn:hover {
+  -webkit-box-shadow: inset 0 -2px 0 rgba(0,0,0,0.1), 0 15px 15px -10px rgba(0,0,0,0.15);
+  box-shadow: inset 0 -2px 0 rgba(0,0,0,0.1), 0 15px 15px -10px rgba(0,0,0,0.15);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+@media only screen and (min-width: 540px) {
+  .btn {
+    font-size: 1.125em;
+    line-height: 50px;
+    height: 50px;
+    min-width: 250px;
+    padding: 0 40px;
+    -webkit-box-shadow: inset 0 -3px 0 rgba(0,0,0,0.1);
+    box-shadow: inset 0 -3px 0 rgba(0,0,0,0.1);
+  }
+  .btn:hover {
+    -webkit-box-shadow: inset 0 -3px 0 rgba(0,0,0,0.1), 0 20px 20px -10px rgba(0,0,0,0.15);
+    box-shadow: inset 0 -3px 0 rgba(0,0,0,0.1), 0 20px 20px -10px rgba(0,0,0,0.15);
+  }
+}
+body > header {
+  overflow: hidden;
+}
+body > header.headroom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+body > header.headroom.headroom--not-top.headroom--unpinned,
+body > header.headroom.headroom--not-top.headroom--pinned {
+  background: #e7e7e6;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+body > header.headroom.headroom--not-top.headroom--unpinned {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+body > header.headroom.headroom--not-top.headroom--pinned {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+body > header .container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: flex-start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin: 10px auto;
+  padding: 0 10px;
+}
+body > header .container h1 {
+  margin: 0;
+  line-height: 0;
+  margin: 0;
+}
+body > header .container h1 a {
+  display: block;
+}
+body > header .container h1 svg {
+  width: 40px;
+  height: 40px;
+}
+body > header .container h1 svg path {
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+}
+body > header .container nav {
+  margin-left: auto;
+}
+body > header .container nav ul {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+body > header .container nav ul li {
+  font-size: 0.875em;
+  margin: 0 10px;
+}
+@media only screen and (min-width: 540px) {
+  body > header .container {
+    max-width: 940px;
+    padding: 0 20px;
+  }
+  body > header .container h1 svg {
+    width: 60px;
+    height: 60px;
+  }
+  body > header .container nav ul li {
+    font-size: 1em;
+    margin: 0 20px;
+  }
+}
+main .container {
+  position: relative;
+  padding: 40px 10px;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+main .container h2 {
+  font-size: 1.5em;
+  font-weight: 800;
+  margin: 0;
+}
+main .container p {
+  font-size: 0.875em;
+  line-height: 1.6;
+  margin: 20px auto;
+  padding: 0 10px;
+  max-width: 420px;
+}
+@media only screen and (min-width: 540px) {
+  main .container {
+    padding: 60px 0;
+  }
+  main .container h2 {
+    font-size: 2.25em;
+  }
+  main .container p {
+    font-size: 1.125em;
+    max-width: 540px;
+    padding: 0 20px;
+    max-width: 640px;
+  }
+  main .container .btn {
+    margin-top: 40px;
+  }
+}
+main #about .container .me {
+  margin: 0 0 60px;
+}
+main #about .container .me h1 {
+  font: 100 3.125em 'NexaRustScriptL-00';
+  font-weight: 100;
+  margin: 0;
+}
+main #about .container .me h3 {
+  font-size: 1.125em;
+  font-weight: 500;
+  margin: 0;
+}
+main #about .container .me p {
+  font-size: 0.875em;
+  padding: 0 10px;
+  margin: 20px auto;
+  max-width: 360px;
+}
+main #about .container .services {
+  margin: 40px 0 0;
+}
+main #about .container .services > div {
+  margin: 40px 0;
+}
+main #about .container .services .icon {
+  background: rgba(104,104,104,0.1);
+  display: block;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+main #about .container .services h4 {
+  font: 100 1.5em 'NexaRustScriptL-00';
+  margin: 20px 0 0;
+}
+main #about .container .services p {
+  font-size: 0.8125em;
+  margin: 10px auto 0;
+}
+@media only screen and (min-width: 540px) {
+  main #about .container {
+    padding-bottom: 100px;
+  }
+  main #about .container .me h1 {
+    font-size: 5em;
+  }
+  main #about .container .me h3 {
+    font-size: 1.5em;
+  }
+  main #about .container .me p {
+    font-size: 1.25em;
+    max-width: 420px;
+    margin: 30px auto;
+  }
+  main #about .container .services {
+    *zoom: 1;
+    width: auto;
+    max-width: 940px;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  main #about .container .services:before,
+  main #about .container .services:after {
+    content: '';
+    display: table;
+  }
+  main #about .container .services:after {
+    clear: both;
+  }
+  main #about .container .services:before,
+  main #about .container .services:after {
+    content: "";
+    display: table;
+  }
+  main #about .container .services:after {
+    clear: both;
+  }
+  main #about .container .services .icon {
+    width: 120px;
+    height: 120px;
+  }
+  main #about .container .services p {
+    font-size: 1em;
+    margin: 20px 0;
+    padding: 0 10px;
+  }
+  main #about .container .services > div {
+    margin: 0;
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 31.33333333333333%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  main #about .container .services > div:before,
+  main #about .container .services > div:after {
+    content: '';
+    display: table;
+  }
+  main #about .container .services > div:after {
+    clear: both;
+  }
+  main #about .container .services > div:last-child {
+    margin-right: 0%;
+  }
+}
+main #work .container {
+  background: #3f9f98;
+  color: #e7e7e6;
+  padding-bottom: 50px;
+}
+main #work .container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  -webkit-transform: skew(0, 4deg);
+  transform: skew(0, 4deg);
+  -webkit-transform-origin: top right;
+  transform-origin: top right;
+  background: #3f9f98;
+  z-index: -1;
+}
+main #work .container .project {
+  margin: 40px auto 0;
+}
+main #work .container .project img {
+  display: block;
+  margin: 0 auto 40px;
+}
+main #work .container .project header {
+  margin: 20px 0;
+}
+main #work .container .project header h3 {
+  font-size: 2em;
+  font-weight: 100;
+  margin: 0;
+}
+main #work .container .project header h3 svg {
+  width: 150px;
+}
+main #work .container .project header h3 svg path {
+  fill: #fff;
+}
+main #work .container .project header span {
+  font-weight: 500;
+  font-size: 0.875em;
+}
+main #work .container .project .content p {
+  font-size: 0.8125em;
+  margin: 20px auto;
+}
+main #work .container .project .btn {
+  background: #24dddf;
+  color: #fff;
+}
+@media only screen and (min-width: 540px) {
+  main #work .container p {
+    max-width: 640px;
+  }
+  main #work .container .project {
+    margin: 60px auto 40px;
+    max-width: 940px;
+  }
+  main #work .container .project header h3 {
+    font-size: 3em;
+  }
+  main #work .container .project header h3 svg {
+    width: 240px;
+  }
+  main #work .container .project .content p {
+    font-size: 1em;
+  }
+}
+main #contact .container {
+  color: #e7e7e6;
+  background: #a838eb;
+  z-index: 1;
+}
+main #contact .container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  -webkit-transform: skew(0, -2deg);
+  transform: skew(0, -2deg);
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+  background: #a838eb;
+  z-index: -1;
+}
+main #contact .container .btn {
+  color: #fff;
+  background: #ff5bff;
+}
+@media only screen and (min-width: 540px) {
+  main #contact .container p {
+    max-width: 540px;
+  }
+}
+body > footer .container {
+  background: #3c4855;
+  color: #e7e7e6;
+  text-align: center;
+  overflow: hidden;
+}
+body > footer .container .links {
+  margin: 20px 0;
+}
+body > footer .container .links a {
+  display: inline-block;
+  text-align: center;
+  margin: 0 10px;
+}
+body > footer .container .links a img {
+  width: 32px;
+  display: block;
+  margin: 0 auto;
+}
+body > footer .container .links a svg {
+  display: block;
+  margin: 0 auto;
+}
+body > footer .container .links a svg path {
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+}
+body > footer .container .links a span {
+  font-size: 0.625em;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+}
+body > footer .container .links a:hover svg path {
+  fill: #24dddf;
+}
+body > footer .container .links a:hover span {
+  color: #24dddf;
+}
+body > footer .container p {
+  font-size: 0.75em;
+}
+@media only screen and (min-width: 540px) {
+  body > footer .container {
+    padding: 40px 0;
+  }
+  body > footer .container p {
+    font-size: 0.875em;
+  }
+}
+@-ms-viewport {
+  width: device-width;
+}

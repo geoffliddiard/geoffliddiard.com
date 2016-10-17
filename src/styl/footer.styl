@@ -1,0 +1,49 @@
+body > footer
+    
+    .container
+        background $blue-grey
+        color $grey-2
+        text-align center
+        overflow hidden
+        
+        .links
+            margin 20px 0
+            a
+                display inline-block
+                text-align center
+                margin 0 10px
+                
+                img
+                    width 32px
+                    display block
+                    margin 0 auto
+                    
+                svg
+                    display block
+                    margin 0 auto
+                    
+                    path
+                        transition .4s ease-out
+                        
+                span
+                    font-size em(10px)
+                    transition .4s ease-out
+                    
+                &:hover
+                    svg path
+                        fill $cyan
+                        
+                    span
+                        color $cyan
+                    
+
+                
+        p
+            font-size em(12px)
+
+    +above($mobile)
+        .container
+            padding 40px 0
+            
+            p
+                font-size em(14px)

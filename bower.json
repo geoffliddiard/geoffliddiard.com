@@ -1,0 +1,22 @@
+{
+  "name": "geoffliddiard.com",
+  "description": "personal website",
+  "main": "",
+  "authors": [
+    "geoff.liddiard"
+  ],
+  "license": "ISC",
+  "homepage": "https://geoffliddiard.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "headroom.js": "https://npmcdn.com/headroom.js/bower.zip"
+  }
+}

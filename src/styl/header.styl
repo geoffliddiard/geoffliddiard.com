@@ -1,0 +1,78 @@
+body > header
+    overflow hidden
+    
+    &.headroom
+        position fixed
+        top 0
+        left 0
+        right 0
+        z-index 99
+        border-bottom 1px solid transparent    
+        transition .5s ease-out
+        
+        &.headroom--not-top
+            
+            &.headroom--unpinned, &.headroom--pinned
+                background $grey-2
+                border-bottom 1px solid rgba(0,0,0,.1)
+            
+            &.headroom--unpinned
+                transform translateY(-100%)
+            
+            &.headroom--pinned
+                transform translateY(0)
+                
+                
+    
+    .container
+        flexbox()
+        flex-direction row
+        justify-content flex-start
+        align-items center
+        margin 10px auto
+        padding 0 10px
+        
+        h1
+            margin 0
+            line-height 0
+            margin 0
+            
+            a
+                display block
+            
+            svg
+                width 40px
+                height 40px
+                path
+                    transition .4s ease-out
+                    
+               
+                
+        nav
+            margin-left auto
+            ul
+                flexbox()
+                justify-content center
+                
+                li
+                    font-size em(14px)
+                    margin 0 10px
+                    
+                        
+    +above($mobile)
+        
+        .container 
+            max-width 940px
+            padding 0 20px
+            
+            h1
+                svg
+                    width 60px
+                    height 60px
+            
+            nav
+                
+                ul li
+                    font-size em(16px)
+                    margin 0 20px
+                    

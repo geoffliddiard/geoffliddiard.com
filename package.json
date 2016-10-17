@@ -1,0 +1,31 @@
+{
+  "name": "geoffliddiard.com",
+  "version": "1.0.0",
+  "description": "personal website",
+  "author": "geoff.liddiard",
+  "private": true,
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-cdnizer": "^1.1.7",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^5.0.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-jshint": "^2.0.1",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-pug": "^3.1.0",
+    "gulp-rev": "^7.1.2",
+    "gulp-stylus": "^2.5.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-usemin": "^0.3.24",
+    "jeet": "^6.1.5",
+    "jshint": "^2.9.3",
+    "run-sequence": "^1.2.2",
+    "rupture": "^0.6.1"
+  },
+  "engines": {
+    "node": ">=4"
+  }
+}

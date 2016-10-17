@@ -1,0 +1,189 @@
+// Webkit Mixins
+
+clearfix()
+	&:before
+	&:after
+		content: ""
+		display: table
+	&:after
+		clear: both
+		
+
+em(px, base = $base-font-size)
+	return (px / base)em
+	
+
+placeholder(color)
+	::-webkit-input-placeholder 
+		color color
+	:-moz-placeholder /* Firefox 18- */
+		color color
+	::-moz-placeholder /* Firefox 19+ */
+		color color
+	:-ms-input-placeholder
+		color color
+		
+
+webFont(path, family, file)
+	@font-face
+		font-family family
+		src url(path + file + '.eot')
+		src url(path + file + '.eot?#iefix') format('embedded-opentype'), url(path + file + '.woff') format('woff'), url(path + file + '.ttf') format('truetype'), url(path + file + '.svg#'+ family) format('svg')
+		font-weight normal
+		font-style normal
+
+vendor(prop, args)
+	-webkit-{prop} args
+	{prop} args
+	
+tap-highlight-color()
+	vendor('tap-highlight-color', arguments)
+
+box-shadow()
+	vendor('box-shadow', arguments)
+
+user-select()
+	vendor('user-select', arguments)
+
+backface-visibility()
+	vendor('backface-visibility', arguments)
+	
+border-image()
+	-webkit-border-image arguments
+	-moz-border-image arguments
+	border-image arguments
+
+box-sizing()
+	vendor('box-sizing', arguments)
+
+background-linear-gradient(startPoint, startColor, startInterval, endColor, endInterval)
+	background-color startColor
+	background-image -webkit-linear-gradient(startPoint, startColor startInterval, endColor endInterval)
+	background-image linear-gradient(startPoint, startColor startInterval, endColor endInterval)
+
+appearance()
+	-webkit-appearance arguments
+	-moz-appearance arguments
+	appearance arguments
+
+/* Transform / Transitions */
+transition()
+	vendor('transition', arguments)
+
+transition-transform()
+	-webkit-transition unquote('-webkit-transform') arguments
+	-moz-transition unquote('-moz-transform') arguments
+	-ms-transition unquote('-ms-transform') arguments
+	-o-transition unquote('-o-transform') arguments
+	transtition unquote('transform') arguments
+
+transition-delay()
+	vendor('transition-delay', arguments)
+
+transition-property()
+	vendor('transition-property', arguments)
+
+transform()
+	vendor('transform', arguments)
+
+transform-origin()
+	vendor('transform-origin', arguments)
+
+transform-style()
+	-webkit-transform-style arguments
+	transform-style arguments
+
+perspective()
+	-webkit-perspective arguments
+	perspective arguments
+
+
+/* Animations */
+animation()
+	vendor('animation', arguments)
+
+animation-name()
+	vendor('animation-name', arguments)
+
+animation-direction()
+	vendor('animation-direction', arguments)
+
+animation-duration()
+	vendor('animation-duration', arguments)
+
+animation-fill-mode()
+	vendor('animation-fill-mode', arguments)
+
+animation-iteration-count()
+	vendor('animation-iteration-count', arguments)
+
+animation-timing-function()
+	vendor('animation-timing-function', arguments)
+
+animation-timeline()
+	vendor('animation-timeline', arguments)
+
+
+/* Flexbox layout */
+flexbox()
+	display -webkit-box
+	display flex
+
+justify-content()
+	-webkit-box-pack arguments
+	-webkit-justify-content arguments
+	justify-content arguments
+
+align-items()
+	-webkit-box-align arguments
+	-webkit-align-items arguments
+	align-items arguments
+
+align-content()
+	-webkit-align-content arguments
+	align-content arguments
+
+align-self()
+	-webkit-align-self arguments
+	align-self arguments
+
+flex-flow()
+	vendor('flex-flow', arguments)
+
+flex-direction(value)
+	if value == row
+		-webkit-box-orient horizontal
+		-webkit-box-direction normal
+		-webkit-flex-direction row
+		-ms-flex-direction row
+		flex-direction row
+
+	else if value == row-reverse
+		-webkit-box-orient horizontal
+		-webkit-box-direction reverse
+		-webkit-flex-direction row-reverse
+		-ms-flex-direction row-reverse
+		flex-direction row-reverse
+
+	else if value == column
+		-webkit-box-orient vertical
+		-webkit-box-direction normal
+		-webkit-flex-direction column
+		-ms-flex-direction column
+		flex-direction column
+
+	else if value == column-reverse
+		-webkit-box-orient vertical
+		-webkit-box-direction reverse
+		-webkit-flex-direction column-reverse
+		-ms-flex-direction column-reverse
+		flex-direction column-reverse
+
+flex-wrap()
+	-webkit-flex-wrap arguments
+	flex-wrap arguments
+
+order()
+	-webkit-box-ordinal-group arguments
+	-webkit-order arguments
+	order arguments

@@ -1,0 +1,120 @@
+// geoffliddiard.com stylesheet
+@charset 'utf-8'
+
+// Project  vars
+@import _settings
+@import _palette
+
+// Imports / Mixins
+@import _normalize
+@import _mixins
+@import _easing
+@import _fonts
+
+@import 'jeet'
+@import 'rupture'
+
+
+// Global styles
+html
+    width 100%
+    height 100%
+    
+body
+    font-family $font-stack
+    font-weight 100
+    font-size $base-font-size
+    line-height 1.4
+    background $grey-2
+    color $blue-grey
+    min-width 300px
+    -webkit-overflow-scrolling touch
+    backface-visibility hidden
+    
+*
+    box-sizing border-box
+    tap-highlight-color(rgba(0,0,0,0))
+
+    &::selection 
+        background lighten($blue-grey, 30)
+        color $grey-2
+        
+    &::-moz-selection
+        background lighten($blue-grey, 30)
+        color $grey-2
+        
+img
+    width 100%
+    height auto
+    
+a
+    color inherit
+    cursor pointer
+    text-decoration none
+
+p
+    margin 20px 0
+        
+ul
+    list-style none
+    margin 0
+    padding 0
+    
+hr
+    border none
+    width 50px
+    height 5px
+    background rgba($black, 0.1)
+    border-radius 5px
+    margin 40px auto
+    
+.btn
+    font-size em(14px)
+    font-weight 400
+    appearance none
+    display inline-block
+    background $red
+    color $white
+    line-height 40px
+    text-align center
+    width auto
+    min-width 200px
+    border none
+    border-radius 5px
+    padding 0px 30px
+    height 40px
+    user-select none
+    transition .2s $easeOutBack
+    text-decoration none
+    box-shadow inset 0 -2px 0 rgba(0,0,0,.1)
+     
+    &:disabled
+        cursor default
+        background $grey
+        color $grey-2
+    
+    &:focus
+        outline none
+        
+    &:hover
+        box-shadow inset 0 -2px 0 rgba(0,0,0,.1), 0 15px 15px -10px rgba(0, 0, 0, 0.15)
+        transform scale(1.1)
+        
+    +above($mobile)
+        font-size em(18px)
+        line-height 50px
+        height 50px
+        min-width 250px
+        padding 0 40px
+        box-shadow inset 0 -3px 0 rgba(0,0,0,.1)
+        
+        &:hover
+            box-shadow inset 0 -3px 0 rgba(0,0,0,.1), 0 20px 20px -10px rgba(0, 0, 0, 0.15)
+            
+@import header
+@import main
+@import footer
+
+// IE Mobile zoom fix
+@-ms-viewport
+    width device-width
